@@ -31,6 +31,11 @@ public final class Siblings<From, To, Through>: AnyProperty
         return self
     }
 
+    
+    public func load( _ values : [To]) {
+        self.eagerLoadedValue = values
+    }
+    
     // MARK: Operations
 
     public func attach(
